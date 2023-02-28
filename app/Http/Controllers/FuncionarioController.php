@@ -42,9 +42,10 @@ class FuncionarioController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $funcionario = $this->objFuncionario->find($id);
+        return view('show', compact('funcionario'));
     }
 
     /**

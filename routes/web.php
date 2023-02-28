@@ -15,4 +15,4 @@ use App\Http\Controllers\FuncionarioController;
 */
 
 
-Route::resource('/', FuncionarioController::class);
+Route::resource('/funcionarios', FuncionarioController::class);

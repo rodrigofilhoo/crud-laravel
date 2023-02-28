@@ -27,7 +27,7 @@
                         <td>{{ $funcionarios->endereco }}</td>
                         <td>{{ $funcionarios->ec }}</td>
                         <td>
-                            <a href="">
+                            <a href="{{ url("funcionarios/$funcionarios->id") }}">
                                 <button class="button is-link"><i class="fa-solid fa-eye"></i></button>
                             </a>
                             <a href="">

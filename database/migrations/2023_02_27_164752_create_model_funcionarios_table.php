@@ -19,7 +19,7 @@ return new class extends Migration
             $table->date('dtnasc');
             $table->string('endereco');
             $table->string('ec'); //estado civil
-
+            $table->timestamps();
         });
     }
 
