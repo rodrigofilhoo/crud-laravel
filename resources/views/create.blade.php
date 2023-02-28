@@ -5,6 +5,7 @@
     <div class="container">
         <div class="title title-form has-text-centered has-text-weight-bold mt-5">Cadastrar</div>
         <form action="" method="post" class="mt-5">
+            @csrf
             <label for="">Nome:</label>
             <input class="input is-primary" type="text" name="nome" id="nome" placeholder="Digite seu nome">
             <label for="">Email:</label>

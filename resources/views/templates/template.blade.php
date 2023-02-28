@@ -26,17 +26,11 @@
             <nav class="tabs is-boxed is-fullwidth">
                 <div class="container">
                     <ul>
-                        <li class="is-active">
-                            <a>Cadastrar</a>
+                        <li class="">
+                            <a href="funcionarios/create">Cadastrar</a>
                         </li>
                         <li>
-                            <a>Listar</a>
-                        </li>
-                        <li>
-                            <a>Atualizar</a>
-                        </li>
-                        <li>
-                            <a>Deletar</a>
+                            <a href="/funcionarios">Listar</a>
                         </li>
                     </ul>
                 </div>
