@@ -3,15 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ModelFuncionario;
 
 class FuncionarioController extends Controller
 {
+    private $objFuncionario;
+
+    public function __construct()
+    {
+        $this->objFuncionario = new ModelFuncionario();
+    }
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('index');
+        $funcionario = $this->objFuncionario->all();
+        return view('index', compact('funcionario'));
     }
 
     /**
