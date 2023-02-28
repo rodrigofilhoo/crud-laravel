@@ -2,32 +2,4 @@
 
 @section('content')
     {{-- sessão --}}
-    <div class="container">
-        <div class="title title-form has-text-centered has-text-weight-bold mt-5">Cadastrar</div>
-        <form action="" method="post" class="mt-5">
-            <label for="">Nome:</label>
-            <input class="input is-primary" type="text" name="nome" id="nome" placeholder="Digite seu nome">
-            <label for="">Email:</label>
-            <input class="input is-primary" type="email" name="email" id="email" placeholder="Digite seu email">
-            <label for="">Telefone:</label>
-            <input class="input is-primary" type="number" name="telefone" id="telefone" placeholder="Digite seu telefone">
-            <label for="">Data de nascimento:</label>
-            <input class="input is-primary" type="date" name="dtnasc" id="dtnasc">
-            <label for="">Endereço:</label>
-            <input class="input is-primary" type="text" name="endereco" id="endereco" placeholder="Digite seu endereço">
-            <div class="select mt-2 is-primary">
-                <select>
-                    <option>Estado Civil</option>
-                    <option value="solteiro">Solteiro</option>
-                    <option value="casado">Casado</option>
-                    <option value="separado">Separado</option>
-                    <option value="divorciado">Divorciado</option>
-                    <option value="viuvo">Viúvo</option>
-                </select>
-            </div> <br>
-            <div class="buttons mt-3 is-primary">
-                <input class="button is-primary" type="submit" value="Enviar">
-            </div>
-        </form>
-    </div>
 @endsection
