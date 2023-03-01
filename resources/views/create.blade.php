@@ -7,17 +7,20 @@
         <form action="" method="post" class="mt-5">
             @csrf
             <label for="">Nome:</label>
-            <input class="input is-primary" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            <input class="input is-primary" type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
             <label for="">Email:</label>
-            <input class="input is-primary" type="email" name="email" id="email" placeholder="Digite seu email">
+            <input class="input is-primary" type="email" name="email" id="email" placeholder="Digite seu email"
+                required>
             <label for="">Telefone:</label>
-            <input class="input is-primary" type="number" name="telefone" id="telefone" placeholder="Digite seu telefone">
+            <input class="input is-primary" type="number" name="telefone" id="telefone" placeholder="Digite seu telefone"
+                required>
             <label for="">Data de nascimento:</label>
-            <input class="input is-primary" type="date" name="dtnasc" id="dtnasc">
+            <input class="input is-primary" type="date" name="dtnasc" id="dtnasc" required>
             <label for="">Endereço:</label>
-            <input class="input is-primary" type="text" name="endereco" id="endereco" placeholder="Digite seu endereço">
+            <input class="input is-primary" type="text" name="endereco" id="endereco" placeholder="Digite seu endereço"
+                required>
             <div class="select mt-2 is-primary">
-                <select>
+                <select required>
                     <option>Estado Civil</option>
                     <option value="solteiro">Solteiro</option>
                     <option value="casado">Casado</option>

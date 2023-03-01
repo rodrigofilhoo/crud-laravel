@@ -28,6 +28,7 @@ class FuncionarioController extends Controller
      */
     public function create()
     {
+        $func = $this->objFuncionario->all();
         return view('create');
     }
 
@@ -36,7 +37,15 @@ class FuncionarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->objFuncionario->create([
+            'id' => $request->id,
+            'nome' => $request->nome,
+            'email' => $request->email,
+            'telefone' => $request->telefone,
+            'dtnasc' => $request->dtnasc,
+            'endereco' => $request->endereco,
+            'ec' => $request->ec
+        ]);
     }
 
     /**
